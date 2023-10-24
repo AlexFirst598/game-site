@@ -1,0 +1,58 @@
+.system {
+    padding: 145px 0 170px;
+    background-image: url('../img/BG-4-FIX.png');
+    background-size: cover;
+
+    &__wrapper {}
+
+    &__table {
+        margin-top: 133px;
+    }
+
+    &__row {
+        display: flex;
+        border: 1px solid #979797;
+        height: 125px;
+
+        &:not(:first-child) {
+            border-top: 0;
+        }
+    }
+
+    &__cell {
+        padding: 14px 19px 0;
+        width: 276px;
+        border-right: 1px solid #979797;
+
+        &:nth-child(2) {
+            border-right: 0;
+            width: 296px;
+        }
+
+        &--fill {
+            width: 100%;
+            border-right: 0;
+        }
+
+        h3 {
+            color: #FFB548;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2px;
+            margin-bottom: 7px;
+        }
+
+        p {
+            color: #FFF;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            /* 122.222% */
+        }
+    }
+
+}

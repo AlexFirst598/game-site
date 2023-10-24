@@ -1,0 +1,23 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 70px;
+
+    span {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+
+    &--center {
+        align-items: center;
+    }
+}

@@ -1,0 +1,76 @@
+.features {
+    padding: 168px 114px 269px 0;
+    background-image: url('../img/BG-3.png');
+    background-size: cover;
+
+    &__wrapper {
+        width: 410px;
+        margin-left: auto;
+    }
+
+    &__subtitles {
+        color: #FFB548;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px;
+    }
+
+    &__text {
+        color: #FFF;
+        text-align: justify;
+        font-family: Arial;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        /* 122.222% */
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__group {
+        display: flex;
+        gap: 33px;
+    }
+
+    &__dots {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__dot {
+        width: 14px;
+        height: 14px;
+        border: 1px solid #FFF;
+        border-radius: 50%;
+
+        &--active {
+            background-color: #FFF;
+        }
+
+        &:nth-child(1) {
+            margin-top: 13px;
+            margin-bottom: calc(136px - 13px);
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 2px;
+                height: calc(137px - 13px);
+                background-color: #FFF;
+                top: 100%;
+                left: calc(50% - 2px / 2);
+            }
+        }
+
+        &:nth-child(2) {
+            margin-bottom: 62px;
+        }
+    }
+}
