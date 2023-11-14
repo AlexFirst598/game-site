@@ -8,6 +8,12 @@
         justify-content: space-between;
         border-bottom: 1px solid #FFF;
         padding-bottom: 40px;
+
+        @media(max-width: 950px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 42px;
+        }
     }
 
     &__list {
@@ -15,6 +21,8 @@
         gap: 30px;
         align-items: center;
         padding-bottom: 9px;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     &__img {
@@ -23,15 +31,18 @@
     }
 
     &__item {
-        color: #FFF;
-        text-align: right;
-        font-family: Open Sans;
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        letter-spacing: 1.2px;
-        text-transform: uppercase;
+
+        a {
+            color: #FFF;
+            text-align: right;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+        }
     }
 
     &__age {

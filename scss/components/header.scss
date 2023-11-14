@@ -21,6 +21,10 @@
     &__list {
         display: flex;
         gap: 50px;
+
+        @media(max-width: 900px) {
+            display: none;
+        }
     }
 
     &__link {
@@ -39,6 +43,10 @@
     &__btns {
         display: flex;
         gap: 17px;
+
+        @media(max-width: 900px) {
+            display: none;
+        }
     }
 
     &__btn {

@@ -1,13 +1,26 @@
 .quotes {
-padding: 159px 0 147px 0;
+    padding: 159px 0 147px 0;
+    background-image: url('../img/BG-5.png');
+
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media(max-width: 900px) {
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 
     &__content {
         max-width: 413px;
+
+        @media(max-width: 900px) {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 
     &__text {
@@ -17,10 +30,18 @@ padding: 159px 0 147px 0;
         font-weight: 400;
         line-height: 22px;
         margin: 0 0 37px 0;
+
+        @media(max-width: 900px) {
+            text-align: center;
+        }
     }
 
     &__title {
         margin-bottom: 40px;
+
+        @media(max-width: 900px) {
+            text-align: center;
+        }
     }
 
     &__list {
@@ -39,10 +60,18 @@ padding: 159px 0 147px 0;
 
         &:nth-child(2) {
             margin-right: 144px;
+
+            @media (max-width: 1040px) {
+                margin: 0;
+            }
         }
 
         &:nth-child(3) {
             margin-right: 39px;
+
+            @media (max-width: 1040px) {
+                margin: 0;
+            }
         }
 
         &::after {
@@ -54,6 +83,8 @@ padding: 159px 0 147px 0;
             right: 20px;
             top: 30px;
         }
+
+
     }
 
     &__top {

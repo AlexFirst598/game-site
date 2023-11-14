@@ -3,6 +3,11 @@
     background-image: url('../img/BG-3.png');
     background-size: cover;
 
+    @media(max-width: 900px) {
+        background-image: url('../img/BG-3-mobile.png');
+        padding: 168px 0px 269px 0;
+    }
+
     &__wrapper {
         width: 410px;
         margin-left: auto;

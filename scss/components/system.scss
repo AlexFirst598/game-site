@@ -7,6 +7,11 @@
 
     &__table {
         margin-top: 133px;
+
+        @media(max-width: 900px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__row {
