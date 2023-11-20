@@ -1,6 +1,6 @@
 .header {
     padding-top: 20px;
-    z-index: 10;
+    z-index: 12;
     position: relative;
 
     &__wrapper {
@@ -34,10 +34,52 @@
         font-weight: 700;
         letter-spacing: 1.2px;
         text-transform: uppercase;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #FFB548;
+        }
     }
 
-    &__lang-list {
+    &__select {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        padding: 14px 0;
+
+        &::after {
+            content: '';
+            width: 10px;
+            height: 6px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'%3E%3Cpath d='M1.48047 1.11331L5.12832 4.31369L8.77552 1.11331' stroke='white' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E");
+            transition: transform 0.3s;
+        }
+    }
+
+    &__lang--list {
+        position: absolute;
+        padding: 10px 20px 10px 8px;
+        border-radius: 3px;
+        background: rgba(0, 0, 0, 0.75);
+        bottom: -85px;
+        transition: opacity 0.3s;
+        bottom: -74px;
         display: none;
+    }
+
+    &__lang {
+        position: relative;
+
+        &:hover {
+            .header__lang--list {
+                display: block;
+            }
+            .header__select {
+                &::after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
     }
 
     &__btns {
