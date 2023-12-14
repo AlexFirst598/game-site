@@ -14,4 +14,11 @@
     background: linear-gradient(195deg, #FFB548 11.27%, #F3AF34 90.4%);
     padding-top: 19px;
     border: none;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+        width: 216px;
+        height: 44px;
+        padding-top: 11px;
+    }
 }

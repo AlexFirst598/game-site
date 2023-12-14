@@ -1,0 +1,36 @@
+.menu {
+    position: absolute;
+    padding: 20px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border-radius: 7px;
+    right: 0;
+    bottom: -280px;
+    transition: transform 0.5s;
+    transform: translateX(130%);
+
+    @media(min-width: 901px) {
+        display: none;
+    }
+
+    &--open {
+        transform: translateX(0);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        color: #FFB548;
+        font-family: Bebas Neue;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px;
+        padding: 10px 0;
+    }
+}

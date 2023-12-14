@@ -1,0 +1,82 @@
+.slider {
+    background-image: url('../img/BG-6.png');
+    background-size: cover;
+    padding: 197px 0 141px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        color: #FFF;
+        text-align: justify;
+        font-family: Arial, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        /* 122.222% */
+        max-width: 392px;
+        margin-left: 186px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 122.058px;
+            height: 6.271px;
+            background: #FFB548;
+            position: absolute;
+            bottom: 3px;
+            right: 121px;
+            opacity: 0.8;
+        }
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &__title {
+        margin-bottom: 72px;
+        max-width: 402px;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 711.5px;
+            height: 2.994px;
+            border-radius: 4px;
+            background: #FFF;
+            position: absolute;
+            bottom: -10px;
+        }
+    }
+
+    &__group {}
+
+    &__list {
+        display: flex;
+        position: relative;
+        width: 502px;
+    }
+
+    &__item {
+        position: absolute;
+        left: 0;
+        width: 500px;
+        height: 500px;
+
+        img {
+            width: 100%;
+        }
+
+        &:nth-child(2) {
+            left: 30px;
+        }
+
+        &:nth-child(3) {
+            left: 60px;
+        }
+    }
+}

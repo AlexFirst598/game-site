@@ -53,6 +53,13 @@
         font-weight: 400;
         line-height: normal;
         opacity: 0.5;
+        
+
+        @media(max-width: 767px) {
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 36px;
+        }
     }
 
     &__private {
@@ -65,6 +72,10 @@
         line-height: normal;
         letter-spacing: 1.2px;
         text-transform: uppercase;
+
+        @media(max-width: 767px) {
+            text-align: center;
+        }
     }
 
     &__footer {
@@ -72,6 +83,10 @@
         margin-top: 22px;
         justify-content: space-between;
         align-items: center;
+
+        @media(max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     &__links {

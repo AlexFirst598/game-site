@@ -9,6 +9,8 @@
 @import 'components/quotes.scss';
 @import 'components/subscribe.scss';
 @import 'components/footer.scss';
+@import 'components/menu.scss';
+@import 'components/slider.scss';
 
 @font-face {
   font-weight: 700;
@@ -29,6 +31,7 @@ body {
   font-family: 'Bebas Neue', 'Open Sans', sans-serif;
   font-weight: 700;
   background-color: black;
+  overflow-x: hidden;
 }
 
 * {
@@ -64,7 +67,7 @@ p {
 
 .bg-1 {
   background-image: url('../img/BG-1.png');
-  min-height: 960px;
+  min-height: 100vh;
   background-size: cover;
   position: relative;
 }
@@ -103,3 +106,8 @@ p {
     left: calc(50% - 23px / 2);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}
+

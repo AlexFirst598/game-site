@@ -2,11 +2,17 @@
     padding-top: 20px;
     z-index: 12;
     position: relative;
+    padding-bottom: 50px;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        position: relative;
+
+        @media(max-width: 900px) {
+            justify-content: left;
+        }
     }
 
     &__logo {
@@ -70,15 +76,21 @@
     &__lang {
         position: relative;
 
+
         &:hover {
             .header__lang--list {
                 display: block;
             }
+
             .header__select {
                 &::after {
                     transform: rotate(180deg);
                 }
             }
+        }
+
+        @media(max-width: 900px) {
+            margin-left: auto;
         }
     }
 
@@ -99,4 +111,75 @@
             width: 100%;
         }
     }
+
+    &__menu-btn {
+        // background-image: url("data:image/svg+xml,%3Csvg width='25' height='18' viewBox='0 0 25 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='9.49854' y='15.0166' width='14.585' height='2.5' rx='1.25' fill='white'/%3E%3Crect x='0.596191' y='7.51657' width='23.4873' height='2.5' rx='1.25' fill='white'/%3E%3Crect x='0.596191' y='0.016571' width='23.4873' height='2.5' rx='1.25' fill='white'/%3E%3C/svg%3E");
+        width: 23px;
+        height: calc(7px * 2 + 6px);
+        position: relative;
+
+        @media(min-width: 901px) {
+            display: none;
+        }
+
+        span {
+            width: 23px;
+            height: 2px;
+            position: absolute;
+            background-color: #FFF;
+            border-radius: 2px;
+            left: 0;
+            top: 50%;
+            transition: transform 0.3s, opacity 0.2s;
+
+            &:nth-child(1) {
+                transform: translateY(-7px);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(7px);
+            }
+        }
+
+        &--close {
+
+            span {
+                width: 23px;
+                height: 2px;
+                position: absolute;
+                background-color: #FFF;
+                border-radius: 2px;
+                left: 0;
+                top: 50%;
+                transition: transform 0.3s, opacity 0.2s;
+
+                &:nth-child(1) {
+                    transform: translateY(-0px) rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(0px) rotate(-45deg);
+                }
+            }
+        }
+    }
+
+    &__stick {
+        width: 2px;
+        height: 30px;
+        background-color: #FFF;
+        opacity: 0.5;
+        margin-right: 19px;
+        margin-left: 15px;
+
+        @media(min-width: 901px) {
+            display: none;
+        }
+
+    }
+
 }

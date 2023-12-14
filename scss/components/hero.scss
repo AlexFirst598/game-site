@@ -17,6 +17,11 @@
         letter-spacing: 3px;
         text-transform: uppercase;
         margin-top: 237px;
+
+        @media(max-width: 767px) {
+            font-size: 33px;
+            margin-top: 179px;
+        }
     }
 
     &__subtitle {
@@ -26,6 +31,7 @@
         line-height: normal;
         letter-spacing: 2px;
         margin-top: 7px;
+        text-align: center;
     }
 
     &__buy {
@@ -44,8 +50,6 @@
         }
     }
 
-    &__price {}
-
     &__text {
         color: #1A1917;
         text-align: center;
@@ -53,6 +57,10 @@
         font-size: 16px;
         font-weight: 700;
         line-height: normal;
+
+        @media(max-width: 767px) {
+            font-size: 14px;
+        }
     }
 
     &__btn {
@@ -64,5 +72,12 @@
         display: flex;
         align-items: center;
         padding: 0 17px;
+
+        @media(max-width: 767px) {
+            width: 216px;
+            height: 44px;
+            padding: 0 6px;
+        }
+
     }
 }

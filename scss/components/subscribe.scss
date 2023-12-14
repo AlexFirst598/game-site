@@ -12,6 +12,20 @@
             background-position: center top;
             padding: 650px 0 142px;
         }
+
+        @media(max-width: 767px) {
+            background-size: 230px 359px;
+            background-position: -87px 90px;
+            padding: 111px 0 91px;
+        }
+    }
+
+    &__group {
+        margin-left: auto;
+
+        @media(max-width: 767px) {
+            max-width: 190px;
+        }
     }
 
     &__title {
@@ -19,6 +33,11 @@
 
         @media(max-width: 900px) {
             text-align: center;
+        }
+
+        @media(max-width: 767px) {
+            text-align: left;
+            margin-bottom: 27px;
         }
     }
 
@@ -32,6 +51,13 @@
 
         @media(max-width: 900px) {
             text-align: center;
+            color: #FFF;
+            font-size: 14px;
+        }
+
+        @media(max-width: 767px) {
+            text-align: left;
+            max-width: 190px;
         }
     }
 
